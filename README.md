@@ -6,4 +6,4 @@ Download dependencies
 npm install
 ```
 
-Run `npm run start` and Go to `http://localhost:9000`
+Run `npm run start` and go to `http://localhost:9000`
