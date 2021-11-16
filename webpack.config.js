@@ -6,21 +6,22 @@ module.exports = {
   entry: './src/index.ts',
   devtool: 'source-map',
   devServer: {
-    hot: true,
     port: 9000,
-    liveReload: true,
-    open: true,
-    watchFiles: ['src/**/*'],
+    static: {
+      directory: path.join(__dirname, 'src'),
+      watch: true,
+    },
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
     filename: 'index.[contenthash].js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
     assetModuleFilename: 'images/[hash][ext][query]',
   },
+  target: 'web',
   module: {
     rules: [
       {
