@@ -16,10 +16,10 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'index.[contenthash].js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    assetModuleFilename: 'images/[hash][ext][query]',
+    assetModuleFilename: 'images/[name][ext]',
   },
   target: 'web',
   module: {
