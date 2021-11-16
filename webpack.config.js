@@ -9,6 +9,7 @@ module.exports = {
     hot: true,
     port: 9000,
     liveReload: true,
+    open: true,
     watchFiles: ['src/**/*'],
   },
   resolve: {
